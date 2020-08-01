@@ -1,0 +1,37 @@
+@import "./Components/Header.scss";
+@import "./Components/Form.scss";
+@import "./Components/List.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul {
+  margin: 0;
+}
+ul {
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+button {
+  outline: none;
+  border: none;
+  background-color: rgb(207, 207, 207);
+  color: rgb(54, 54, 54);
+  transition: 0.3s;
+  &:hover {
+    background-color: rgb(54, 54, 54);
+    color: rgb(207, 207, 207);
+  }
+}

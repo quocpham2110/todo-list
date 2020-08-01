@@ -1,0 +1,128 @@
+.header {
+  background-color: #ededed;
+  padding: 30px 0;
+  text-align: center;
+  cursor: context-menu;
+}
+.header-wrapper {
+  font-size: 80px;
+  color: #525252;
+  text-shadow: 5px -5px 15px #555555;
+}
+.header__span {
+  font-size: 120px;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(to right, #933517, #c6001a, #eb6c0b, #f09e11, #ffab00, #065f42, #0a4e83);
+  background-clip: text;
+  text-shadow: none;
+}
+
+.form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.form h3 {
+  margin-bottom: 20px;
+}
+.form__inner label {
+  display: block;
+  margin-bottom: 20px;
+}
+.form__inner input,
+.form__inner textarea {
+  width: calc(100% - 30px);
+  border: 1px solid #b9b9b9;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  outline: none;
+  padding: 10px 15px;
+}
+.form__inner textarea {
+  resize: vertical;
+}
+.form__inner p {
+  margin-bottom: 10px;
+}
+.form__btn {
+  text-align: center;
+}
+.form__btn button {
+  padding: 12px 20px;
+}
+
+.list {
+  margin-top: 50px;
+}
+.list h3 {
+  margin-bottom: 20px;
+}
+.list__wrapper {
+  margin-bottom: 30px;
+}
+.list__items {
+  list-style: none;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px 3px #b1b1b1;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 95% 5%;
+  align-items: flex-start;
+}
+.list__items h4 {
+  margin-bottom: 10px;
+}
+.list__items button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: #cfcfcf;
+  color: #363636;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #cfcfcf;
+  color: #363636;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #363636;
+  color: #cfcfcf;
+}
+
+/*# sourceMappingURL=App.css.map */
