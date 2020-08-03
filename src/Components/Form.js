@@ -10,6 +10,7 @@ export class Form extends Component {
     this.state = this.initState;
     this.handleChange = this.handleChange.bind(this);
     this.handleAddTask = this.handleAddTask.bind(this);
+    this.addToList = this.addToList.bind(this);
   }
   handleChange = (e) => {
     let { name, value } = e.target;
@@ -18,9 +19,17 @@ export class Form extends Component {
   };
   handleAddTask = (e) => {
     e.preventDefault();
-    this.props.handleAddTask(this.state);
-    this.setState(this.initState);
+    const taskCheck = this.state;
+    taskCheck.title = taskCheck.title.trim();
+    taskCheck.content = taskCheck.content.trim();
+    taskCheck.title === "" || taskCheck.content === ""
+      ? alert("Please completing your task before adding")
+      : this.addToList(taskCheck);
   };
+  addToList(task) {
+    this.props.addToList(task);
+    this.setState(this.initState);
+  }
   render() {
     return (
       <section className="form">

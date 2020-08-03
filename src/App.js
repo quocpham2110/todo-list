@@ -10,13 +10,11 @@ export default class App extends Component {
     this.state = {
       task: [],
     };
-    this.handleAddTask = this.handleAddTask.bind(this);
+    this.addToList = this.addToList.bind(this);
     this.deleteTask = this.deleteTask.bind(this);
   }
-  handleAddTask = (value) => {
-    value.title.trim() !== "" && value.content.trim() !== ""
-      ? this.setState({ task: [...this.state.task, value] })
-      : alert("Please fill your TASK before add");
+  addToList = (value) => {
+    this.setState({ task: [...this.state.task, value] });
   };
   deleteTask = (index) => {
     const { task } = this.state;
@@ -27,7 +25,7 @@ export default class App extends Component {
       <div className="App">
         <Header />
         <List task={this.state.task} deleteTask={this.deleteTask} />
-        <Form handleAddTask={this.handleAddTask} />
+        <Form addToList={this.addToList} />
       </div>
     );
   }
